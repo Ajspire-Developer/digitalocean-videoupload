@@ -1,0 +1,19 @@
+directories:
+  output: digitalocean-videoupload create Exe
+  buildResources: build
+appId: https://iStepUp.in
+icon: build/logo512.png
+productName: digitalocean-videoupload
+win:
+  target: nsis
+files:
+  - filter:
+      - main.js
+      - build/**/*
+      - all_images/**/*
+      - backend/**/*
+      - preload.js
+nsis:
+  allowToChangeInstallationDirectory: true
+  oneClick: false
+electronVersion: 34.0.1
